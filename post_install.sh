@@ -66,6 +66,7 @@ while read -r p ; do sudo pacman -S --needed $p ; done < <(cat << "EOF"
 EOF
 )
 
+sudo -k
 echo installing AUR packages
 yay vulkan-amdgpu-pro
 yay lutris 
