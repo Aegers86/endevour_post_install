@@ -15,6 +15,7 @@ EOF
 echo installing nice to haves
 while read -r p ; do sudo pacman -S --needed $p ; done < <(cat << "EOF"
     qbittorrent
+    steam
     wine
     winetricks
     giflib
