@@ -15,7 +15,6 @@ echo installing nice to haves
 while read -r p ; do sudo pacman -S --needed $p ; done < <(cat << "EOF"
     wine
     winetricks
-    wine-staging 
     giflib 
     lib32-giflib 
     libpng 
