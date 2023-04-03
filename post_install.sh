@@ -69,7 +69,6 @@ EOF
 sudo -k
 echo installing AUR packages
 yay vulkan-amdgpu-pro
-yay lutris 
 yay icaclient
 yay discord
 yay visual-studio-code-bin
