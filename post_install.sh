@@ -6,7 +6,7 @@ sudo -n true
 test $? -eq 0 || exit 1 "you should have sudo privilege to run this script"
 
 echo installing GPU drivers
-while read -r p ; do sudo pacman -S $p ; done < <(cat << "EOF"
+while read -r p ; do sudo pacman -S --needed $p ; done < <(cat << "EOF"
     amdvlk
 EOF
 )
