@@ -12,13 +12,6 @@ while read -r p ; do sudo pacman -S --needed $p ; done < <(cat << "EOF"
 EOF
 )
 
-echo installing AUR packages
-while read -r p ; do sudo yay $p ; done < <(cat << "EOF"
-    vulkan-amdgpu-pro
-    lutris
-EOF
-)
-
 echo installing nice to haves
 while read -r p ; do sudo pacman -S --needed $p ; done < <(cat << "EOF"
     qbittorrent
@@ -71,3 +64,11 @@ while read -r p ; do sudo pacman -S --needed $p ; done < <(cat << "EOF"
     lutris
 EOF
 )
+
+echo installing AUR packages
+yay vulkan-amdgpu-pro
+yay lutris 
+yay icaclient
+yay discord
+yay visual-studio-code-bin
+yay cura-bin
